@@ -43,6 +43,8 @@ Experimental **native ARMv7 port of Blender 2.64** for the jailbroken **iPhone 3
 
 The source and scripts will be populated from the actual development tree rather than reconstructed from screenshots or incomplete chat excerpts.
 
+**Developer handoff:** [What to send for the source-matched release](docs/SEND-FILES.md). Archived experimental scripts are in [historical-patches](historical-patches/README.md).
+
 ## Installation
 
 **Only install a release asset that explicitly identifies itself as an iPhone 3GS / iOS 6 ARMv7 build.** This is jailbreak-only software and is not an App Store app. The experimental Python application uses bundle identifier `io.arutiunio.blender3gs.python`, separate from the earlier Touch v2 test app.
