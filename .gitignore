@@ -23,9 +23,9 @@ build.ninja
 
 # Local test outputs
 *.log
-*.plist
-*crash*
-*syslog*
+*crash*.plist
+*crash*.txt
+*syslog*.txt
 *.before-*
 *.bak
 __pycache__/
