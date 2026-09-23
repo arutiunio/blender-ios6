@@ -1,0 +1,41 @@
+# Generated files and local build trees
+build/
+build-*/
+blender-ios6-build-python/
+blender-ios6-host/
+ios-deps/
+*.o
+*.a
+*.dylib
+*.dSYM/
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json
+build.ninja
+.ninja_deps
+.ninja_log
+
+# Distribution artifacts (attach tested binaries to GitHub Releases)
+*.ipa
+*.deb
+*.zip
+*.tar.gz
+
+# Local test outputs
+*.log
+*.plist
+*crash*
+*syslog*
+*.before-*
+*.bak
+__pycache__/
+*.pyc
+.DS_Store
+
+# Credentials and signing material
+*.p12
+*.mobileprovision
+*.pem
+*.key
+.env
+.env.*
