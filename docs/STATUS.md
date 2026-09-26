@@ -1,6 +1,6 @@
 # Project status
 
-Last updated: 2026-09-23. All statuses below describe **reported physical iPhone 3GS tests**, not CI or an automated hardware test farm.
+Last updated: 2026-09-26 (latest documented device capture: 2026-09-25). All statuses below describe **reported physical iPhone 3GS tests**, not CI or an automated hardware test farm.
 
 | Milestone | Result |
 | --- | --- |
@@ -31,3 +31,15 @@ Last updated: 2026-09-23. All statuses below describe **reported physical iPhone
 6. Produce a source-matched pre-alpha release and an independent clean build.
 
 Screenshots and device syslogs should be attached to issues with the matching version and Mach-O UUID, with personal information redacted.
+
+## September 25 UI37–UI44 milestone (newer than the historical status above)
+
+See [the UI37–UI44 experiment record](../experiments/ui37-ui44/README.md), [original-asset SHA-256 manifest](../experiments/ui37-ui44/SHA256SUMS), and the [Mac artifact sync script](../scripts/sync-ui37-ui44-from-mac.sh).
+
+- **UI36 full-profile baseline:** on-device logs recorded 227 Properties panels. Subsequent Core builds intentionally load a reduced set.
+- **UI40/UI41 fast launch:** a real native Viewport frame is presented *before* embedded Python initialization. In the UI41 device log, the first draw took approximately one second after Blender's initial scene/layout setup; Python still runs later on the UI thread for about 3.5–3.9 seconds. Subsequent launches may be faster from warm caches; changed process IDs mean persistence through Home is not demonstrated.
+- **UI43 screenshot-tested graphics isolation:** suppressing the old Camera/Lamp viewport draw path removed the giant white triangle and large camera rectangle. Cross-editor white lines and icon artifacts remain. Camera/Lamp viewport geometry is temporarily hidden, not fixed.
+- **UI44:** experimental per-icon clipping, editor GL-state isolation and simple Camera/Lamp markers have been prepared; no confirmed phone test or screenshot yet.
+- **Outstanding:** complete native UI and icon rendering, background process lifetime, Python's main-thread stall, clean-source reproducibility, saving/rendering workflow validation. UI39 Core has 119 registered panels in tested logs, not the earlier 227.
+
+Never publish unredacted full device logs from this session; they include account-identifying entries. Source/IPA release still requires complete corresponding-source audit and toolchain/dependency inventory.
