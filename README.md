@@ -2,7 +2,7 @@
 
 Experimental **native ARMv7 port of Blender 2.64** for the jailbroken **iPhone 3GS (iOS 6.1.6)**. This project aims to make the original Blender editor—not a remote desktop client or a scene viewer—run on the device.
 
-> **Status: pre-alpha / work in progress.** The application runs on an iPhone 3GS, draws the 3D viewport and opens native Blender menus. The touch controls and mobile screen layout are being developed. The Properties editor is not yet fully usable. This repository is being assembled; do not assume that a reproducible full source tree or downloadable IPA is available until explicitly published.
+> **Status: pre-alpha / work in progress.** The iPhone 3GS builds draw a native 3D viewport, run embedded Python, and show a reduced Blender Properties interface. The UI40/UI41 branch can present an initial real 3D frame before initializing Python. Device-tested UI43 removed large Camera/Lamp artifacts but other UI graphics remain broken. UI44 is experimental and not yet device-verified. The complete source-matched release and public IPA are not yet available. See the [UI37–UI44 milestone](experiments/ui37-ui44/README.md).
 
 ## Hardware and software
 
@@ -21,6 +21,11 @@ Experimental **native ARMv7 port of Blender 2.64** for the jailbroken **iPhone 3
 - Corrected ARMv7 RNA parameter layout and embedded Python `atexit` registration.
 - Updated font and icon rendering paths.
 - A wider, native Properties area in the mobile screen layout.
+- Experimental native-first-frame startup (UI40/UI41); UI43 viewport gizmo isolation.
+
+## Recent development assets
+
+[UI37–UI44 scripts, archive checksums and device screenshots](experiments/ui37-ui44/README.md). The corresponding originals are committed by the [Mac synchronization script](scripts/sync-ui37-ui44-from-mac.sh); see the directory for actual asset availability. These incremental patches are not a complete source release.
 
 ## Known limitations
 
