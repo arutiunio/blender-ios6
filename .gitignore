@@ -19,6 +19,8 @@ build.ninja
 *.ipa
 *.deb
 *.zip
+# Preserve source/history bundles for the UI37-UI44 archive.
+!experiments/ui37-ui44/bundles/*.zip
 *.tar.gz
 
 # Local test outputs
