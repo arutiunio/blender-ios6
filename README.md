@@ -1,5 +1,10 @@
 # Blender 3GS — Blender 2.64 for iOS 6
 
+<p align="center">
+  <img src="assets/blender-ios6-preview.jpg" alt="Blender 2.64 running on iPhone 3GS with iOS 6" width="480">
+</p>
+
+
 Experimental **native ARMv7 port of Blender 2.64** for the jailbroken **iPhone 3GS (iOS 6.1.6)**. This project aims to make the original Blender editor—not a remote desktop client or a scene viewer—run on the device.
 
 > **Status: public pre-alpha snapshot available.** The iPhone 3GS builds draw a native 3D viewport, run embedded Python, and show a reduced Blender Properties interface. UI40/UI41 can present an initial real 3D frame before Python initialization. Device-tested UI43 removed the largest Camera/Lamp viewport artifacts, while other UI graphics bugs remain. UI44 is published only as an unverified development patch. See the [2026-09-29 pre-release](https://github.com/arutiunio/blender-ios6/releases/tag/pre-alpha-2026-09-29) and the [UI37–UI44 milestone](experiments/ui37-ui44/README.md).
