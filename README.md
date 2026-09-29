@@ -1,7 +1,7 @@
 # Blender 3GS — Blender 2.64 for iOS 6
 
 <p align="center">
-  <img src="assets/blender-ios6-preview.jpg" alt="Blender 2.64 running on iPhone 3GS with iOS 6" width="480">
+  <img src="assets/blender-ios6-preview.png" alt="Blender 2.64 running on iPhone 3GS with iOS 6" width="480">
 </p>
 
 
