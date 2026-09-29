@@ -43,3 +43,7 @@ See [the UI37–UI44 experiment record](../experiments/ui37-ui44/README.md), [or
 - **Outstanding:** complete native UI and icon rendering, background process lifetime, Python's main-thread stall, clean-source reproducibility, saving/rendering workflow validation. UI39 Core has 119 registered panels in tested logs, not the earlier 227.
 
 Never publish unredacted full device logs from this session; they include account-identifying entries. Source/IPA release still requires complete corresponding-source audit and toolchain/dependency inventory.
+
+## Public pre-alpha release
+
+The first public development snapshot is now available as [pre-alpha-2026-09-29](https://github.com/arutiunio/blender-ios6/releases/tag/pre-alpha-2026-09-29). It publishes the tested UI43 IPA, matching UI43 source snapshot, raw dependency/build handoff, UI44 unverified patch bundle, checksum manifest and archived UI37–UI44 history. See [verification details](releases/pre-alpha-2026-09-29.md).
