@@ -2,7 +2,7 @@
 
 Experimental **native ARMv7 port of Blender 2.64** for the jailbroken **iPhone 3GS (iOS 6.1.6)**. This project aims to make the original Blender editor—not a remote desktop client or a scene viewer—run on the device.
 
-> **Status: pre-alpha / work in progress.** The iPhone 3GS builds draw a native 3D viewport, run embedded Python, and show a reduced Blender Properties interface. The UI40/UI41 branch can present an initial real 3D frame before initializing Python. Device-tested UI43 removed large Camera/Lamp artifacts but other UI graphics remain broken. UI44 is experimental and not yet device-verified. The complete source-matched release and public IPA are not yet available. See the [UI37–UI44 milestone](experiments/ui37-ui44/README.md).
+> **Status: public pre-alpha snapshot available.** The iPhone 3GS builds draw a native 3D viewport, run embedded Python, and show a reduced Blender Properties interface. UI40/UI41 can present an initial real 3D frame before Python initialization. Device-tested UI43 removed the largest Camera/Lamp viewport artifacts, while other UI graphics bugs remain. UI44 is published only as an unverified development patch. See the [2026-09-29 pre-release](https://github.com/arutiunio/blender-ios6/releases/tag/pre-alpha-2026-09-29) and the [UI37–UI44 milestone](experiments/ui37-ui44/README.md).
 
 ## Hardware and software
 
@@ -54,7 +54,7 @@ The source and scripts will be populated from the actual development tree rather
 
 **Only install a release asset that explicitly identifies itself as an iPhone 3GS / iOS 6 ARMv7 build.** This is jailbreak-only software and is not an App Store app. The experimental Python application uses bundle identifier `io.arutiunio.blender3gs.python`, separate from the earlier Touch v2 test app.
 
-See [Build and installation notes](docs/BUILD.md). Release assets, checksums and a matching source snapshot will be added together when available.
+Download the current **pre-release** from [pre-alpha-2026-09-29](https://github.com/arutiunio/blender-ios6/releases/tag/pre-alpha-2026-09-29). The tested binary is `Blender3GS-python-ui-v43-visual-diagnostic.ipa` (ARMv7, minimum iOS 6.0, bundle ID `io.arutiunio.blender3gs.python`). See [pre-alpha installation notes](docs/INSTALL-PREALPHA-2026-09-29.md) and [build notes](docs/BUILD.md).
 
 ## Upstream and licensing
 
